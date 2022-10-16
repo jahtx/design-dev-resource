@@ -1,0 +1,28 @@
+// This is where the main styles for the sandbox come together
+
+// it binds dominant styles (always present) with "treatment" specific styles
+// "dominant" is a replacement for "includeInaAll"
+
+@import "./dominant/index.scss";
+@import "./variables/fonts-and-colors.scss";
+// @import "./treatments/parallax.scss";
+@import "./treatments/docket.scss";
+@import "./treatments/transition.scss";
+:root {
+  --scale: 0.1;
+  --space: 8vmin;
+}
+body {
+  font-family: $main-font;
+  font-size: 0.9rem;
+}
+
+.sectionHeading {
+  @include section-head;
+}
+
+.breadcrumb-item {
+  font-size: 0.9rem;
+  font-family: $breadcrumb-font;
+  text-transform: uppercase;
+}

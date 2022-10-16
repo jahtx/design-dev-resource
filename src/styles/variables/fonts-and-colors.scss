@@ -1,0 +1,51 @@
+// COLORS
+
+$prime-red: #ec2e2e;
+$covid-orange: #ff5733;
+$covid-blue: #4f61a7;
+
+$covid-green: linear-gradient(
+  to right top,
+  #49c37c,
+  #3bb86d,
+  #2dad5e,
+  #1ca34f,
+  #009840
+);
+$covid-purple-gradient: linear-gradient(
+  to right top,
+  #92219a,
+  #85229d,
+  #7624a0,
+  #6527a3,
+  #5129a5
+);
+
+// FONTS
+
+$main-font: "Lato", "Open Sans", Sans-serif, "Trebuchet MS", "Bebas Neue";
+$breadcrumb-font: "Lato", "Silkscreen";
+$fun-font: "Abyssinica SIL", Sans-serif;
+$standard-heading: "Raleway", "Open Sans", Sans-serif;
+
+$web-safe: Sans-serif;
+$main-link: Sans-serif;
+
+@mixin section-head {
+  font-family: $standard-heading;
+  text-transform: uppercase;
+}
+
+@mixin general-tag {
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: #52a7e4;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  font-style: italic;
+  &:hover {
+    background-color: #4287b8;
+  }
+}

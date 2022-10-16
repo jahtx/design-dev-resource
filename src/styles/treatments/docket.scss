@@ -1,0 +1,33 @@
+@import "../dominant/index.scss";
+
+ul.docket {
+  row-gap: 0.5rem;
+  @include MQ(S) {
+    justify-content: space-around;
+  }
+
+  .docketItem {
+    // li
+    width: 95%;
+    margin: 0 1% 1rem;
+
+    @include MQ(S) {
+      width: 45%;
+    }
+    @include MQ(M) {
+      width: 31%;
+    }
+
+    a {
+      @include MQ(S) {
+        height: 100%;
+      }
+      .docketItem__title {
+        padding: 0.5rem 0 0 0;
+      }
+    }
+    &__descrip {
+      line-height: 1.2rem;
+    }
+  }
+}

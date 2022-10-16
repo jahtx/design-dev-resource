@@ -1,0 +1,111 @@
+// bestpractices.scss is where primary HTML tags are defined
+// and some styles I've deemed the best to keep in all projects
+@import "../variables/fonts-and-colors.scss";
+@import "breakpoints.scss";
+html {
+  font-size: 110%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $standard-heading;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.no-break {
+  white-space: pre;
+}
+
+.not-underline {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+ol.breadcrumb {
+  background-color: transparent;
+  margin: 0;
+  padding: 1rem 0;
+}
+.border-grey {
+  border-color: #cccccc;
+}
+
+.one-pt-8-rem {
+  font-size: 1.8rem;
+}
+.one-pt-3-rem {
+  font-size: 1.3rem;
+}
+.one-pt-2-rem {
+  font-size: 1.2rem;
+}
+.one-pt-1-rem {
+  font-size: 1.1rem;
+}
+.one-rem {
+  font-size: 1rem;
+}
+
+.pt-9-rem {
+  font-size: 0.9rem;
+}
+.pt-8-rem {
+  font-size: 0.8rem;
+}
+.pt-7-rem {
+  font-size: 0.7rem;
+}
+.pt-6-rem {
+  font-size: 0.6rem;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  :focus {
+    text-decoration: none;
+  }
+}
+
+a.linkText-white {
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.linkText-black {
+  color: black;
+  a {
+    color: black;
+    text-decoration: underline;
+    :hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.standard-inner {
+  padding: 0;
+  @include MQ(M) {
+    padding: 0 5%;
+  }
+}

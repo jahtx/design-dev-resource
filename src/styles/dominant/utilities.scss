@@ -1,0 +1,18 @@
+$light-grey: #c7c7c7;
+
+@mixin border_guide {
+  // box-shadow: inset 0px 0px 0px 0.5px $light-grey;
+}
+div,
+li,
+a {
+  @include border_guide;
+}
+
+.b-red {
+  box-shadow: inset 0px 0px 0px 0.5px red;
+}
+
+.b-blue {
+  box-shadow: inset 0px 0px 0px 0.5px blue;
+}
