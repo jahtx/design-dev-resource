@@ -6,7 +6,7 @@
   padding: 1vh 0;
 }
 
-.workDesignLogo {
+.designDevResourceMobile {
   display: block;
   @include MQ(S) {
     display: none;
@@ -18,7 +18,7 @@
   }
 }
 
-.workDesignLogoDesktop {
+.designDevResourceDesktop {
   display: none;
   @include MQ(S) {
     display: block;

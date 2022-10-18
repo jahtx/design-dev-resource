@@ -9,20 +9,20 @@ const TitleBit = () => {
   return (
     <header className="titleBit d-flex align-items-center justify-content-center m-0 p-0">
       <h1 className="m-0 p-0">
-        <div className="workDesignLogo">
+        <div className="designDevResourceMobile">
           <GatsbyImage
             image={getImage(data.workDesignLogo)}
-            alt="Work Design Dev"
+            alt="Design Dev Resource"
             objectFit="contain"
-            imgClassName="workDesignLogo__img"
+            imgClassName="designDevResourceMobile__img"
           />
         </div>
-        <div className="workDesignLogoDesktop">
+        <div className="designDevResourceDesktop">
           <GatsbyImage
-            image={getImage(data.workDesignLogoDesktop)}
-            alt="Work Design Dev"
+            image={getImage(data.designDevResourceLogoDesktop)}
+            alt="Design Dev Resource"
             objectFit="contain"
-            imgClassName="workDesignLogoDesktop__img"
+            imgClassName="designDevResourceDesktop__img"
           />
         </div>
       </h1>
@@ -36,7 +36,9 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        workDesignLogo: file(relativePath: { eq: "work-design-logo.png" }) {
+        workDesignLogo: file(
+          relativePath: { eq: "designdevresource-logo-mobile.png" }
+        ) {
           childImageSharp {
             gatsbyImageData(
               quality: 100
@@ -46,12 +48,12 @@ export const ImageQuery = () => {
             )
           }
         }
-        workDesignLogoDesktop: file(
-          relativePath: { eq: "work-design-logo-desktop.png" }
+        designDevResourceLogoDesktop: file(
+          relativePath: { eq: "designdevresource-logo-desktop.png" }
         ) {
           childImageSharp {
             gatsbyImageData(
-              quality: 100
+              quality: 85
               placeholder: BLURRED
               formats: [WEBP]
               layout: CONSTRAINED
