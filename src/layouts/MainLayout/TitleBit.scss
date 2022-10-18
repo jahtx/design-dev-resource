@@ -1,5 +1,5 @@
-@import "../../styles/dominant/breakpoints.scss";
 @import "../../styles/variables/fonts-and-colors.scss";
+@import "../../styles/dominant/breakpoints.scss";
 
 .titleBit {
   background-color: $prime-blue;
@@ -7,19 +7,35 @@
 }
 
 .workDesignLogo {
-  width: 100%;
   display: block;
-  max-width: 70vw;
   @include MQ(S) {
     display: none;
+  }
+  &__img {
+    width: 100%;
+    max-width: 70vw;
+    margin: 1rem 0;
   }
 }
 
 .workDesignLogoDesktop {
-  width: 100%;
   display: none;
   @include MQ(S) {
     display: block;
+  }
+  &__img {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem 0;
+  }
+}
+
+.redBox {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  @include MQ(S) {
+    display: none;
     max-width: 800px;
     margin: 1rem 0;
   }

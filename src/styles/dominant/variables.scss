@@ -1,0 +1,14 @@
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin margin_center {
+  margin: 0 auto;
+}
+
+@mixin allcaps_header {
+  font-family: $headerFont;
+  text-transform: uppercase;
+}

@@ -1,25 +1,30 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+
 import "./TitleBit.scss";
 
-const TitleBit = ({ siteLocation }) => {
+const TitleBit = () => {
   const data = ImageQuery();
   return (
     <header className="titleBit d-flex align-items-center justify-content-center m-0 p-0">
       <h1 className="m-0 p-0">
-        <GatsbyImage
-          image={getImage(data.workDesignLogo)}
-          alt="Work Design Dev"
-          objectFit="contain"
-          className="workDesignLogo"
-        />
-        <GatsbyImage
-          image={getImage(data.workDesignLogoDesktop)}
-          alt="Work Design Dev"
-          objectFit="contain"
-          className="workDesignLogoDesktop"
-        />
+        <div className="workDesignLogo">
+          <GatsbyImage
+            image={getImage(data.workDesignLogo)}
+            alt="Work Design Dev"
+            objectFit="contain"
+            imgClassName="workDesignLogo__img"
+          />
+        </div>
+        <div className="workDesignLogoDesktop">
+          <GatsbyImage
+            image={getImage(data.workDesignLogoDesktop)}
+            alt="Work Design Dev"
+            objectFit="contain"
+            imgClassName="workDesignLogoDesktop__img"
+          />
+        </div>
       </h1>
     </header>
   );

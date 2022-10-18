@@ -17,7 +17,7 @@
     "noEmit": true,
     "isolatedModules": true,
     "noUnusedLocals": false,
-    "target": "es6"
+    "target": "es5"
   },
   "include": [
     "./src",

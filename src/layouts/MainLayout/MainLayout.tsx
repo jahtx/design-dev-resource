@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useLocation } from "@reach/router";
 import TitleBit from "./TitleBit";
 
 type MainLayoutProps = {
@@ -7,10 +6,9 @@ type MainLayoutProps = {
 };
 
 const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
-  const siteLocation = useLocation();
   return (
     <>
-      <TitleBit siteLocation={siteLocation} />
+      <TitleBit />
       {children}
     </>
   );
