@@ -1,16 +1,13 @@
 import * as React from "react";
-import Container from "react-bootstrap/Container";
+import { useLocation } from "@reach/router";
 import TitleBit from "./TitleBit";
 
 type MainLayoutProps = {
-  siteLocation?: string;
   children: React.ReactNode;
 };
 
-const MainLayout = ({
-  siteLocation,
-  children,
-}: MainLayoutProps): JSX.Element => {
+const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
+  const siteLocation = useLocation();
   return (
     <>
       <TitleBit siteLocation={siteLocation} />
