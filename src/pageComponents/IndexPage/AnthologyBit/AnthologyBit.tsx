@@ -1,15 +1,23 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "./AnthologyBit.scss";
 
 const AnthologyBit = () => {
+  const data = ImageQuery();
   return (
     <section className="anthologyBit text-light">
       <Container>
-        {" "}
         <div className="pack d-flex">
-          <div className="pack__first d-flex align-items-center justify-content-center"></div>
+          <div className="pack__first d-flex align-items-center justify-content-center">
+            <GatsbyImage
+              image={getImage(data.spiralImg)}
+              alt="spiral"
+              objectFit="contain"
+              className="testingimg"
+            />
+          </div>
           <div className="pack__second p-4">
             <p>
               Shortbread chocolate bar marshmallow gingerbread muffin tart
@@ -19,7 +27,6 @@ const AnthologyBit = () => {
               bonbon wafer.
             </p>
             <p>
-              {" "}
               Jelly beans muffin bear claw carrot cake sugar plum candy dessert
               cake sesame snaps. Tart cupcake pie soufflé cake. Cheesecake
               cheesecake pudding candy chocolate cake carrot cake apple pie
@@ -37,3 +44,23 @@ const AnthologyBit = () => {
 };
 
 export default AnthologyBit;
+
+export const ImageQuery = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        spiralImg: file(relativePath: { eq: "spiral.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 100
+              placeholder: BLURRED
+              formats: [WEBP]
+              layout: CONSTRAINED
+            )
+          }
+        }
+      }
+    `
+  );
+  return data;
+};
