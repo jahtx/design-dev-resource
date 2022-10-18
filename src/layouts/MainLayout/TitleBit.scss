@@ -14,7 +14,7 @@
   &__img {
     width: 100%;
     max-width: 70vw;
-    margin: 1rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -22,11 +22,12 @@
   display: none;
   @include MQ(S) {
     display: block;
+    padding: 0 1rem;
   }
   &__img {
     width: 100%;
-    max-width: 800px;
-    margin: 1rem 0;
+    max-width: 1000px;
+    padding: 1rem 0;
   }
 }
 

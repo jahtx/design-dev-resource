@@ -14,7 +14,7 @@ const TitleBit = () => {
             image={getImage(data.workDesignLogo)}
             alt="Design Dev Resource"
             objectFit="contain"
-            imgClassName="designDevResourceMobile__img"
+            className="designDevResourceMobile__img"
           />
         </div>
         <div className="designDevResourceDesktop">
@@ -22,7 +22,8 @@ const TitleBit = () => {
             image={getImage(data.designDevResourceLogoDesktop)}
             alt="Design Dev Resource"
             objectFit="contain"
-            imgClassName="designDevResourceDesktop__img"
+            // imgClassName="designDevResourceDesktop__img"
+            className="designDevResourceDesktop__img"
           />
         </div>
       </h1>
