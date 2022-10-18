@@ -54,6 +54,7 @@ export const ImageQuery = () => {
           childImageSharp {
             gatsbyImageData(
               quality: 100
+              width: 300
               placeholder: BLURRED
               formats: [WEBP]
               layout: CONSTRAINED

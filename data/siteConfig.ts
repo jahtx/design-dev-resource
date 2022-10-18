@@ -16,7 +16,7 @@ const siteConfig = {
   userEmail: "contact@jahtx.com",
   userTwitter: "hernandezjames",
   userLocation: "Seguin, TX",
-  copyright: `Copyright © 2022, James Hernandez, All Rights Reserved`,
+  copyright: `Copyright © 2022, Design Dev Resource, All Rights Reserved`,
 };
 
 export default siteConfig;
