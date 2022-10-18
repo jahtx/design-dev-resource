@@ -22,7 +22,6 @@ const TitleBit = () => {
             image={getImage(data.designDevResourceLogoDesktop)}
             alt="Design Dev Resource"
             objectFit="contain"
-            // imgClassName="designDevResourceDesktop__img"
             className="designDevResourceDesktop__img"
           />
         </div>

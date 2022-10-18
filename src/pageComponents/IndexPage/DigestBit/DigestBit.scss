@@ -1,0 +1,29 @@
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
+.digestBit {
+  background-image: linear-gradient(
+    to right top,
+    #699e88,
+    #00959b,
+    #0085c3,
+    #006be0,
+    #6231ca
+  );
+  .pack {
+    flex-direction: column;
+    @include MQ(S) {
+      flex-direction: row;
+    }
+    &__first {
+      @include MQ(S) {
+        width: 35%;
+      }
+    }
+    &__second {
+      @include MQ(S) {
+        width: 65%;
+      }
+    }
+  }
+}

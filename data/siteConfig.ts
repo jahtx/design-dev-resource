@@ -1,14 +1,14 @@
 const siteConfig = {
-  title: "Work Design Dev",
+  title: "Design Dev Resource",
   keywords: "user experience, front-end development, react, redux",
   author: "James Hernandez",
-  siteUrl: "https://workdesigndev.com",
+  siteUrl: "https://designdevresource.com",
   siteDescription: "A blog about user experience and front-end web development",
   social: {
     twitter: "hernandezjames",
   },
   siteRss: "/rss.xml",
-  siteRssTitle: "Work-Design-Dev RSS feed",
+  siteRssTitle: "Design Dev Resource RSS feed",
   googleAnalyticsID: "UA-xxx",
   dateFromFormat: "YYYY-MM-DD",
   dateFormat: "DD/MM/YYYY",

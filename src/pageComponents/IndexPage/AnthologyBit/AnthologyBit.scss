@@ -1,0 +1,30 @@
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
+.anthologyBit {
+  background-image: linear-gradient(
+    to right top,
+    #92219a,
+    #85229d,
+    #7624a0,
+    #6527a3,
+    #5129a5
+  );
+
+  .pack {
+    flex-direction: column;
+    @include MQ(S) {
+      flex-direction: row;
+    }
+    &__first {
+      @include MQ(S) {
+        width: 35%;
+      }
+    }
+    &__second {
+      @include MQ(S) {
+        width: 65%;
+      }
+    }
+  }
+}
