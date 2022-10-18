@@ -20,18 +20,17 @@ const AnthologyBit = () => {
           </div>
           <div className="pack__second p-4">
             <p>
-              Shortbread chocolate bar marshmallow gingerbread muffin tart
-              topping. Sweet cheesecake topping donut shortbread. Macaroon chupa
-              chups tiramisu chupa chups toffee chupa chups. Marzipan cupcake
-              toffee tart donut. Shortbread pie tiramisu cookie cupcake dragée
-              bonbon wafer.
+              Toffee halvah topping sugar plum donut toffee sweet roll.
+              Liquorice fruitcake marshmallow chupa chups topping toffee sugar
+              plum bear claw carrot cake. Gingerbread cheesecake gummies candy
+              canes tiramisu. Jelly biscuit macaroon ice cream jelly gingerbread
+              lollipop dragée tart.
             </p>
             <p>
-              Jelly beans muffin bear claw carrot cake sugar plum candy dessert
-              cake sesame snaps. Tart cupcake pie soufflé cake. Cheesecake
-              cheesecake pudding candy chocolate cake carrot cake apple pie
-              chocolate cake shortbread. Lemon drops caramels powder candy
-              dessert cake.
+              Vestibulum ullamcorper ornare risus, ut tristique ex ornare sit
+              amet. Donec rhoncus vestibulum aliquam. Nullam varius erat a lorem
+              sollicitudin elementum. Nunc nec magna ipsum. Fusce finibus leo ac
+              massa consectetur semper.
             </p>
             <Link className="float-end linkText-white" to="/portfolio">
               Explore

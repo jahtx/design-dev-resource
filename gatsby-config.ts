@@ -33,6 +33,13 @@ const config: GatsbyConfig = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Open Sans`, `Raleway`, `Lato`, `Space Grotesk`, `Silkscreen`],
+        display: "swap",
+      },
+    },
   ],
 };
 

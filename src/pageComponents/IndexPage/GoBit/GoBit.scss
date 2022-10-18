@@ -1,0 +1,15 @@
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
+.goBit {
+  .pack {
+    flex-direction: column;
+
+    &__first {
+      .niceImg {
+      }
+    }
+    &__second {
+    }
+  }
+}
