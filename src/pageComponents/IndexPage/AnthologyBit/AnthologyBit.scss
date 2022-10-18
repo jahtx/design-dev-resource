@@ -13,10 +13,15 @@
 
   .pack {
     flex-direction: column;
+    padding-top: 1rem;
     @include MQ(S) {
       flex-direction: row;
+      padding: 0;
     }
     &__first {
+      .niceImg {
+        max-width: 240px;
+      }
       @include MQ(S) {
         width: 35%;
       }

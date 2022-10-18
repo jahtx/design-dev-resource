@@ -1,15 +1,24 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "./DigestBit.scss";
 
 const DigestBit = () => {
+  const data = ImageQuery();
   return (
     <section className="digestBit text-light">
       <Container>
         {" "}
         <div className="pack d-flex">
-          <div className="pack__first d-flex align-items-center justify-content-center"></div>
+          <div className="pack__first d-flex align-items-center justify-content-center">
+            <GatsbyImage
+              image={getImage(data.coffeeImg)}
+              alt="spiral"
+              objectFit="contain"
+              className="niceImg"
+            />
+          </div>
           <div className="pack__second p-4">
             <p>
               Shortbread chocolate bar marshmallow gingerbread muffin tart
@@ -19,7 +28,6 @@ const DigestBit = () => {
               bonbon wafer.
             </p>
             <p>
-              {" "}
               Jelly beans muffin bear claw carrot cake sugar plum candy dessert
               cake sesame snaps. Tart cupcake pie soufflé cake. Cheesecake
               cheesecake pudding candy chocolate cake carrot cake apple pie
@@ -37,3 +45,23 @@ const DigestBit = () => {
 };
 
 export default DigestBit;
+
+export const ImageQuery = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        coffeeImg: file(relativePath: { eq: "coffee.png" }) {
+          childImageSharp {
+            gatsbyImageData(
+              quality: 100
+              placeholder: BLURRED
+              formats: [WEBP]
+              layout: CONSTRAINED
+            )
+          }
+        }
+      }
+    `
+  );
+  return data;
+};

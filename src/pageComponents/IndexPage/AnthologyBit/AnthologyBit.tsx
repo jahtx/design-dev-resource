@@ -12,10 +12,10 @@ const AnthologyBit = () => {
         <div className="pack d-flex">
           <div className="pack__first d-flex align-items-center justify-content-center">
             <GatsbyImage
-              image={getImage(data.spiralImg)}
+              image={getImage(data.basicImg)}
               alt="spiral"
               objectFit="contain"
-              className="testingimg"
+              className="niceImg"
             />
           </div>
           <div className="pack__second p-4">
@@ -49,7 +49,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        spiralImg: file(relativePath: { eq: "spiral.png" }) {
+        basicImg: file(relativePath: { eq: "basic-ui-design.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100

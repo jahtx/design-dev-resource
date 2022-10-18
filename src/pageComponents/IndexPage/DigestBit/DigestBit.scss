@@ -16,6 +16,9 @@
       flex-direction: row;
     }
     &__first {
+      .niceImg {
+        max-width: 200px;
+      }
       @include MQ(S) {
         width: 35%;
       }
