@@ -1,0 +1,26 @@
+@import "../../styles/dominant/breakpoints.scss";
+@import "../../styles/variables/fonts-and-colors.scss";
+
+.titleBit {
+  background-color: $prime-blue;
+  padding: 1vh 0;
+}
+
+.workDesignLogo {
+  width: 100%;
+  display: block;
+  max-width: 70vw;
+  @include MQ(S) {
+    display: none;
+  }
+}
+
+.workDesignLogoDesktop {
+  width: 100%;
+  display: none;
+  @include MQ(S) {
+    display: block;
+    max-width: 800px;
+    margin: 1rem 0;
+  }
+}
