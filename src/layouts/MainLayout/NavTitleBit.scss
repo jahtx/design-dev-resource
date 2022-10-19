@@ -2,6 +2,8 @@
 @import "../../styles/dominant/breakpoints.scss";
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
+$mobileNavHeight: 8rem;
+
 .navTitleBit {
   background-color: $prime-blue;
   padding: 1vh 0;
@@ -9,7 +11,7 @@
 
 .navTitleBitMob {
   background-color: $prime-blue;
-  height: 8.5rem;
+  height: $mobileNavHeight;
   position: fixed;
   z-index: 3;
   transition: height 0.5s ease-in-out;
@@ -21,7 +23,7 @@
 }
 
 .navSpacer {
-  height: 8.5rem;
+  height: $mobileNavHeight;
   display: block;
   @include MQ(S) {
     display: none;
