@@ -42,6 +42,7 @@
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-remark": "^5.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
+    "hamburgers": "^1.2.1",
     "jquery": "^3.6.1",
     "nanoid": "^4.0.0",
     "prismjs": "^1.29.0",

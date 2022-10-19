@@ -1,9 +1,26 @@
 @import "../../styles/variables/fonts-and-colors.scss";
 @import "../../styles/dominant/breakpoints.scss";
+@import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .navTitleBit {
   background-color: $prime-blue;
   padding: 1vh 0;
+}
+
+.hamburgerCont {
+  padding: 0.3rem 0 0 0;
+  button.hamburger {
+    padding: 0 0.5rem;
+  }
+}
+
+.hamburger,
+.hamburger.is-active {
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    background-color: white;
+  }
 }
 
 .mainNav {

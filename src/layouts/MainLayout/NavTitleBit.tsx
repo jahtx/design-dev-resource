@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import navItemsFile from "./navItems.json";
 import { nanoid } from "nanoid";
@@ -15,6 +15,11 @@ const navItems: Array<NavItemType> = navItemsFile.navItems;
 
 const NavTitleBit = () => {
   const data = ImageQuery();
+  const [isActive, setActive] = useState(false);
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   return (
     <>
       <div className="designDevResourceMobile">
@@ -52,6 +57,19 @@ const NavTitleBit = () => {
           </ul>
         </nav>
         <header className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
+          <div className="hamburgerCont d-flex align-items-center justify-content-center">
+            <button
+              className={
+                "hamburger hamburger--vortex-r " +
+                (isActive ? "is-active" : null)
+              }
+              onClick={handleToggle}
+            >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
           <h1 className="m-0 p-0">
             <div className="designDevResourceDesktop__imgCont">
               <GatsbyImage

@@ -1,7 +1,7 @@
 $light-grey: #c7c7c7;
 
 @mixin border_guide {
-  // box-shadow: inset 0px 0px 0px 0.5px $light-grey;
+  box-shadow: inset 0px 0px 0px 0.5px $light-grey;
 }
 div,
 li,
