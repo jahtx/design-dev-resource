@@ -9,10 +9,10 @@ const GoBit = () => {
   return (
     <section className="goBit">
       <Container>
-        <div className="pack d-flex">
+        <div className="pack d-flex align-items-center justify-content-center">
           <div className="pack__first d-flex align-items-center justify-content-center">
             <GatsbyImage
-              image={getImage(data.screensImg)}
+              image={getImage(data.accessoriesImg)}
               alt="spiral"
               objectFit="contain"
               className="niceImg"
@@ -37,7 +37,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        screensImg: file(relativePath: { eq: "whitescreens.png" }) {
+        accessoriesImg: file(relativePath: { eq: "work-accessories.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100

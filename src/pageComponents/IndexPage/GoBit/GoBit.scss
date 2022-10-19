@@ -1,9 +1,24 @@
 @import "../../../styles/dominant/breakpoints.scss";
 @import "../../../styles/variables/fonts-and-colors.scss";
 
+@import "../../../styles/dominant/breakpoints.scss";
+@import "../../../styles/variables/fonts-and-colors.scss";
+
 .goBit {
   .pack {
     flex-direction: column;
-    padding-top: 2rem;
+    @include MQ(L) {
+      flex-direction: row-reverse;
+    }
+    &__first {
+      @include MQ(L) {
+        width: 50%;
+      }
+    }
+    &__second {
+      @include MQ(L) {
+        width: 50%;
+      }
+    }
   }
 }
