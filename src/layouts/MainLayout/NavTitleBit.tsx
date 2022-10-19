@@ -22,15 +22,17 @@ const NavTitleBit = () => {
   };
   return (
     <>
-      <div className="designDevResourceNewMob">
+      {/* MOBILE MENU */}
+      <div className="ddrMenuMobl__cradle">
+        {/* SHOW HIDE */}
         <div
           className={
-            "navTitleBitMob d-flex align-items-start justify-content-center m-0 p-1 " +
-            (isActive ? "navTitleBitMob--isActive" : null)
+            "ddrMenuMobl__hamper d-flex align-items-start justify-content-center m-0 p-0 " +
+            (isActive ? "ddrMenuMobl__hamper--isActive" : null)
           }
         >
-          <div className="d-flex align-items-center justify-content-center">
-            <nav className="hamburgerCont d-flex align-items-center justify-content-center">
+          <div className="ddrMenuMobl__headerBar d-flex align-items-center justify-content-center">
+            <nav className="ddrMenuMobl__hamburgerCont d-flex align-items-center justify-content-center">
               <button
                 className={
                   "hamburger hamburger--vortex-r " +
@@ -45,13 +47,13 @@ const NavTitleBit = () => {
             </nav>
 
             <header>
-              <h1 className="m-0 p-0">
-                <div className="designDevResourceNewMob__imgCont d-flex align-items-center justify-content-center">
+              <h1 className="m-0 p-0 d-flex align-items-center justify-content-center">
+                <div className="ddrMenuMobl__imgCont d-flex align-items-center justify-content-center">
                   <GatsbyImage
-                    image={getImage(data.designDevResourceLogoMobile)}
+                    image={getImage(data.ddrLogoMobile)}
                     alt="Design Dev Resource"
                     objectFit="contain"
-                    className="designDevResourceDesktop__img"
+                    className="ddrMenuMobl__img"
                   />
                 </div>
               </h1>
@@ -59,13 +61,14 @@ const NavTitleBit = () => {
           </div>
         </div>
       </div>
+      {/* DESKTOP MENU */}
       <div className="designDevResourceDesktop">
         <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
           <header>
             <h1 className="m-0 p-0">
               <div className="designDevResourceDesktop__imgCont  d-flex align-items-center justify-content-center">
                 <GatsbyImage
-                  image={getImage(data.designDevResourceLogoDesktop)}
+                  image={getImage(data.ddrLogoDesktop)}
                   alt="Design Dev Resource"
                   objectFit="contain"
                   className="designDevResourceDesktop__img"
@@ -86,9 +89,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        designDevResourceLogoMobile: file(
-          relativePath: { eq: "design-dev-mob.png" }
-        ) {
+        ddrLogoMobile: file(relativePath: { eq: "ddr-logo-mobile.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100
@@ -98,9 +99,7 @@ export const ImageQuery = () => {
             )
           }
         }
-        designDevResourceLogoDesktop: file(
-          relativePath: { eq: "designdevresource-logo-desktop.png" }
-        ) {
+        ddrLogoDesktop: file(relativePath: { eq: "ddr-logo-desktop.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 85

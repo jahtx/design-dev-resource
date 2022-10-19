@@ -2,49 +2,11 @@
 @import "../../styles/dominant/breakpoints.scss";
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
-$mobileNavHeight: 8rem;
+$mobileNavHeight: 7rem;
 
 .navTitleBit {
   background-color: $prime-blue;
   padding: 1vh 0;
-}
-
-.navTitleBitMob {
-  background-color: $prime-blue;
-  height: $mobileNavHeight;
-  position: fixed;
-  z-index: 3;
-  transition: height 0.5s ease-in-out;
-  -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
-  box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
-  &--isActive {
-    height: 20rem;
-  }
-}
-
-.navSpacer {
-  height: $mobileNavHeight;
-  display: block;
-  @include MQ(S) {
-    display: none;
-  }
-}
-
-.hamburgerCont {
-  height: 100%;
-  padding: 0.3rem 0 0 0;
-  button.hamburger {
-    padding: 0 0.5rem;
-  }
-}
-
-.hamburger,
-.hamburger.is-active {
-  .hamburger-inner,
-  .hamburger-inner:before,
-  .hamburger-inner:after {
-    background-color: white;
-  }
 }
 
 .mainNav {
@@ -90,17 +52,62 @@ $mobileNavHeight: 8rem;
   }
 }
 
-.designDevResourceNewMob {
-  display: block;
-  &__imgCont {
-    padding: 0.9rem 0.4rem;
+.ddrMenuMobl {
+  &__cradle {
+    // this determines whether it displays for mobile or desktop
+    display: block;
+    @include MQ(S) {
+      display: none;
+    }
   }
-  @include MQ(S) {
-    display: none;
+  &__hamper {
+    // hamper is d-flex align-items-start justify-content-center m-0 p-0
+    background-color: $prime-blue;
+    height: $mobileNavHeight;
+    position: fixed;
+    z-index: 3;
+    transition: height 0.5s ease-in-out;
+    -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+    box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+    &--isActive {
+      height: 20rem;
+    }
+  }
+  &__headerBar {
+    // headerBar is d-flex align-items-center justify-content-center
+    height: $mobileNavHeight;
+  }
+  // headerBar has two child divs: hamburgerCont and imgCont
+  &__hamburgerCont {
+    height: 100%;
+    padding: 0.3rem 0.5rem 0 0.5rem;
+    button.hamburger {
+      padding: 0 0.5rem;
+    }
+  }
+  &__imgCont {
+    width: 90%;
   }
   &__img {
     width: 100%;
     max-width: 1200px;
+  }
+}
+
+.hamburger,
+.hamburger.is-active {
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    background-color: white;
+  }
+}
+
+.navSpacer {
+  height: $mobileNavHeight;
+  display: block;
+  @include MQ(S) {
+    display: none;
   }
 }
 
