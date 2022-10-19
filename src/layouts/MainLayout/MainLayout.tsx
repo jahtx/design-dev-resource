@@ -1,6 +1,7 @@
 import * as React from "react";
-import TitleBit from "./TitleBit";
+import NavTitleBit from "./NavTitleBit";
 import Footer from "./Footer";
+import MainNav from "./MainNav";
 
 type MainLayoutProps = {
   children: React.ReactNode;
@@ -9,7 +10,7 @@ type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
   return (
     <>
-      <TitleBit />
+      <NavTitleBit />
       {children}
       <Footer />
     </>

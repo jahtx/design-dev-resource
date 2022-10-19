@@ -1,0 +1,64 @@
+@import "../../styles/variables/fonts-and-colors.scss";
+@import "../../styles/dominant/breakpoints.scss";
+
+.navTitleBit {
+  background-color: $prime-blue;
+  padding: 1vh 0;
+}
+
+.mainNav {
+  display: none;
+  @include MQ(M) {
+    display: block;
+  }
+  ul {
+    background-color: #4e4e4e;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      font-family: Silkscreen;
+      font-size: 0.8rem;
+      a {
+        background-color: #4e4e4e;
+        padding: 0 1rem;
+        color: white;
+        display: inline-block;
+        &:hover {
+          color: white;
+          background-color: grey;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.designDevResourceMobile {
+  display: block;
+  @include MQ(S) {
+    display: none;
+  }
+  &__imgCont {
+    padding: 1rem 0;
+  }
+  &__img {
+    width: 100%;
+    max-width: 70vw;
+  }
+}
+
+.designDevResourceDesktop {
+  display: none;
+  &__imgCont {
+    padding: 0.5rem;
+  }
+  @include MQ(S) {
+    display: block;
+  }
+  &__img {
+    width: 100%;
+    max-width: 1200px;
+  }
+}

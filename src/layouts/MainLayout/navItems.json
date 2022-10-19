@@ -1,0 +1,30 @@
+{
+  "navItems": [
+    {
+      "linkName": "Home",
+      "url": "/",
+      "ariaLabel": "home"
+    },
+    {
+      "linkName": "All Articles",
+      "url": "/articles",
+      "ariaLabel": "all articles"
+    },
+    {
+      "linkName": "Tag Sort",
+      "url": "/tagsort",
+      "ariaLabel": "sort by tags"
+    },
+    {
+      "linkName": "Other Resources",
+      "url": "/blogroll",
+      "ariaLabel": "other Publications"
+    },
+
+    {
+      "linkName": "Contact",
+      "url": "/#contact",
+      "ariaLabel": "contact form to contact Covidnomics team"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+@import "../../styles/dominant/breakpoints.scss";
+@import "../../styles/variables/fonts-and-colors.scss";
+
+.mainNav {
+  display: none;
+  @include MQ(M) {
+    display: block;
+  }
+  ul {
+    background-color: #4e4e4e;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      font-family: Silkscreen;
+      font-size: 0.8rem;
+      a {
+        background-color: #4e4e4e;
+        padding: 0 1rem;
+        color: white;
+        display: inline-block;
+        &:hover {
+          color: white;
+          background-color: grey;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

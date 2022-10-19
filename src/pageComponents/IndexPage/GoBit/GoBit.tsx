@@ -37,7 +37,7 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        screensImg: file(relativePath: { eq: "screens.png" }) {
+        screensImg: file(relativePath: { eq: "whitescreens.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100
