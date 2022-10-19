@@ -11,6 +11,9 @@
     @include MQ(L) {
       flex-direction: row-reverse;
     }
+    .niceImg {
+      padding: 0 2rem;
+    }
     &__first {
       @include MQ(L) {
         width: 50%;
