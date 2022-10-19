@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 import GoBit from "../pageComponents/IndexPage/GoBit";
 import AnthologyBit from "../pageComponents/IndexPage/AnthologyBit";
 import DigestBit from "../pageComponents/IndexPage/DigestBit";
+import ContactBit from "../pageComponents/IndexPage/ContactBit";
 import { DataProps } from "../types/GenTypes";
 import "../styles/main.scss";
 
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <GoBit />
       <AnthologyBit />
       <DigestBit />
+      <ContactBit />
     </MainLayout>
   );
 };
