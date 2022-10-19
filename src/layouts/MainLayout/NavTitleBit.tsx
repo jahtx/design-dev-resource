@@ -23,7 +23,7 @@ const NavTitleBit = () => {
   return (
     <>
       <div className="designDevResourceNewMob">
-        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-1">
+        <div className="navTitleBitMob d-flex align-items-center justify-content-center m-0 p-1">
           <div className="hamburgerCont d-flex align-items-center justify-content-center">
             <button
               className={
@@ -67,6 +67,7 @@ const NavTitleBit = () => {
           </header>
         </div>
       </div>
+      <div className="navSpacer"></div>
     </>
   );
 };

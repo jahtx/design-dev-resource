@@ -7,6 +7,21 @@
   padding: 1vh 0;
 }
 
+.navTitleBitMob {
+  background-color: $prime-blue;
+  padding: 1vh 0;
+  position: fixed;
+  z-index: 3;
+}
+
+.navSpacer {
+  height: 2rem;
+  display: block;
+  @include MQ(S) {
+    display: none;
+  }
+}
+
 .hamburgerCont {
   padding: 0.3rem 0 0 0;
   button.hamburger {
