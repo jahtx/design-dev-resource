@@ -6,11 +6,6 @@ $mobileNavHeight: 7rem;
 // $mobileNavHeightActive: 100vh;
 $mobileNavHeightActive: 13rem;
 
-.navTitleBit {
-  background-color: $prime-blue;
-  padding: 1vh 0;
-}
-
 .ddrMenuMobl {
   &__cradle {
     // this determines whether it displays for mobile or desktop
@@ -110,6 +105,7 @@ $mobileNavHeightActive: 13rem;
 
 .ddrMenuDesk {
   display: none;
+  background-color: $prime-blue;
   &__imgCont {
     padding: 0.9rem 3rem;
   }

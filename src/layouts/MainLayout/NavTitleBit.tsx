@@ -83,7 +83,7 @@ const NavTitleBit = () => {
       </div>
       {/* DESKTOP MENU */}
       <div className="ddrMenuDesk">
-        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
+        <div className="d-flex align-items-center justify-content-center m-0 p-0">
           <header>
             <h1 className="m-0 p-0">
               <div className="ddrMenuDesk__imgCont  d-flex align-items-center justify-content-center">
