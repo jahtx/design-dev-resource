@@ -3,6 +3,7 @@
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 $mobileNavHeight: 7rem;
+$mobileNavHeightActive: 17rem;
 
 .navTitleBit {
   background-color: $prime-blue;
@@ -28,7 +29,7 @@ $mobileNavHeight: 7rem;
     -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
     box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
     &--isActive {
-      height: 20rem;
+      height: $mobileNavHeightActive;
     }
   }
   &__headerBar {
