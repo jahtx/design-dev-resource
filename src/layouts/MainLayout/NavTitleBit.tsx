@@ -22,41 +22,8 @@ const NavTitleBit = () => {
   };
   return (
     <>
-      <div className="designDevResourceMobile">
-        <header className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
-          <h1 className="m-0 p-0">
-            <div className="designDevResourceMobile__imgCont">
-              <GatsbyImage
-                image={getImage(data.workDesignLogo)}
-                alt="Design Dev Resource"
-                objectFit="contain"
-                className="designDevResourceMobile__img"
-              />
-            </div>
-          </h1>
-        </header>
-      </div>
-      <div className="designDevResourceDesktop">
-        {/* <nav
-          className="mainNav text-center"
-          aria-labelledby="main menu for desktop"
-        >
-          <ul className="list-style-none">
-            {navItems &&
-              navItems.map((navItem) => {
-                const { linkName, url, ariaLabel } = navItem;
-                const id = nanoid();
-                return (
-                  <li key={id}>
-                    <a href={url} aira-label={ariaLabel}>
-                      {linkName}
-                    </a>
-                  </li>
-                );
-              })}
-          </ul>
-        </nav> */}
-        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
+      <div className="designDevResourceNewMob">
+        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-1">
           <div className="hamburgerCont d-flex align-items-center justify-content-center">
             <button
               className={
@@ -70,6 +37,22 @@ const NavTitleBit = () => {
               </span>
             </button>
           </div>
+          <header>
+            <h1 className="m-0 p-0">
+              <div className="designDevResourceNewMob__imgCont  d-flex align-items-center justify-content-center">
+                <GatsbyImage
+                  image={getImage(data.designDevResourceLogoDesktop)}
+                  alt="Design Dev Resource"
+                  objectFit="contain"
+                  className="designDevResourceDesktop__img"
+                />
+              </div>
+            </h1>
+          </header>
+        </div>
+      </div>
+      <div className="designDevResourceDesktop">
+        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
           <header>
             <h1 className="m-0 p-0">
               <div className="designDevResourceDesktop__imgCont  d-flex align-items-center justify-content-center">

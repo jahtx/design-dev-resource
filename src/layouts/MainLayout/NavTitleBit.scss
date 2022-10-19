@@ -66,16 +66,30 @@
   }
 }
 
+.designDevResourceNewMob {
+  display: block;
+  &__imgCont {
+    padding: 0.9rem 0.4rem;
+  }
+  @include MQ(S) {
+    display: none;
+  }
+  &__img {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 .designDevResourceDesktop {
   display: none;
   &__imgCont {
-    padding: 0.5rem;
+    padding: 0.9rem;
   }
   @include MQ(S) {
     display: block;
   }
   &__img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
   }
 }
