@@ -4,12 +4,6 @@
 .goBit {
   .pack {
     flex-direction: column;
-
-    &__first {
-      .niceImg {
-      }
-    }
-    &__second {
-    }
+    padding-top: 1rem;
   }
 }

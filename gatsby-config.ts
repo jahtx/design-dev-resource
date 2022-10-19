@@ -5,6 +5,8 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: siteConfig.title,
     siteUrl: siteConfig.siteUrl,
+    keywords: siteConfig.keywords,
+    author: siteConfig.author,
     description: siteConfig.siteDescription,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
