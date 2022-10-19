@@ -37,7 +37,7 @@ const NavTitleBit = () => {
         </header>
       </div>
       <div className="designDevResourceDesktop">
-        <nav
+        {/* <nav
           className="mainNav text-center"
           aria-labelledby="main menu for desktop"
         >
@@ -55,8 +55,8 @@ const NavTitleBit = () => {
                 );
               })}
           </ul>
-        </nav>
-        <header className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
+        </nav> */}
+        <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
           <div className="hamburgerCont d-flex align-items-center justify-content-center">
             <button
               className={
@@ -70,17 +70,19 @@ const NavTitleBit = () => {
               </span>
             </button>
           </div>
-          <h1 className="m-0 p-0">
-            <div className="designDevResourceDesktop__imgCont">
-              <GatsbyImage
-                image={getImage(data.designDevResourceLogoDesktop)}
-                alt="Design Dev Resource"
-                objectFit="contain"
-                className="designDevResourceDesktop__img"
-              />
-            </div>
-          </h1>
-        </header>
+          <header>
+            <h1 className="m-0 p-0">
+              <div className="designDevResourceDesktop__imgCont  d-flex align-items-center justify-content-center">
+                <GatsbyImage
+                  image={getImage(data.designDevResourceLogoDesktop)}
+                  alt="Design Dev Resource"
+                  objectFit="contain"
+                  className="designDevResourceDesktop__img"
+                />
+              </div>
+            </h1>
+          </header>
+        </div>
       </div>
     </>
   );
