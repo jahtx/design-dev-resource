@@ -5,6 +5,7 @@
 @import "../../../styles/variables/fonts-and-colors.scss";
 
 .goBit {
+  padding: 1.4rem 0 0.7rem 0;
   .pack {
     flex-direction: column;
     @include MQ(L) {

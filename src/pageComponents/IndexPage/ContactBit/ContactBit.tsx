@@ -32,7 +32,7 @@ const ContactBit = () => {
       <Container className="contactBit__cont">
         {!state.succeeded ? (
           <div className="multiBox d-flex justify-content-center">
-            <div className="multiBox__contForm w-100">
+            <div className="multiBox__contForm">
               <Form className="m-0 p-0" onSubmit={handleSubmitButton}>
                 <Form.Group>
                   <Form.Label className="contactBit__formLabel">

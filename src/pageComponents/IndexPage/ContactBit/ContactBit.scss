@@ -4,6 +4,7 @@
 .contactBit {
   .multiBox {
     &__contForm {
+      width: 100%;
       @include MQ(L) {
         width: 70%;
         padding: 0 1%;
