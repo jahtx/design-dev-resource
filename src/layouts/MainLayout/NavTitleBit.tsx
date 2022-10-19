@@ -62,9 +62,22 @@ const NavTitleBit = () => {
               (isActive ? "ddrMenuMobl__list--isActive" : null)
             }
           >
-            <li>Vestibulum lacus lorem</li>
-            <li>Cras nibh lectus</li>
-            <li>Sed blandit sit amet</li>
+            {navItems &&
+              navItems.map((navItem) => {
+                const { linkName, url, ariaLabel } = navItem;
+                const id = nanoid();
+                return (
+                  <li key={id}>
+                    <a
+                      href={url}
+                      aira-label={ariaLabel}
+                      onClick={() => setActive(!isActive)}
+                    >
+                      {linkName}
+                    </a>
+                  </li>
+                );
+              })}
           </ul>
         </header>
       </div>

@@ -3,7 +3,8 @@
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 $mobileNavHeight: 7rem;
-$mobileNavHeightActive: 17rem;
+// $mobileNavHeightActive: 100vh;
+$mobileNavHeightActive: 13rem;
 
 .navTitleBit {
   background-color: $prime-blue;
@@ -54,12 +55,14 @@ $mobileNavHeightActive: 17rem;
   }
   $timing: 1s;
   &__list {
+    font-family: "Montserrat", "Lora", "Open Sans", "Trebuchet MS", Sans-serif;
     top: $mobileNavHeight;
     width: 100%;
     list-style-type: none;
     color: white;
     position: absolute;
     visibility: hidden;
+    text-transform: uppercase;
     opacity: 0;
     transition: visibility 0s linear $timing, opacity 500ms;
     &--isActive {
@@ -67,9 +70,22 @@ $mobileNavHeightActive: 17rem;
       opacity: 1;
       transition: visibility 0s linear 0s, opacity $timing;
     }
+
     li {
+      font-family: "Montserrat", "Lora", "Open Sans", "Trebuchet MS", Sans-serif;
+      list-style: none;
       font-size: 1.2rem;
-      padding: 0.4rem 0;
+      color: #fff;
+      line-height: 2.2;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+
+      a {
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
     }
   }
 }
