@@ -23,44 +23,39 @@ const NavTitleBit = () => {
   return (
     <>
       {/* MOBILE MENU */}
-      <div className="ddrMenuMobl__cradle">
-        {/* SHOW HIDE */}
-        <div
-          className={
-            "ddrMenuMobl__hamper d-flex align-items-start justify-content-center m-0 p-0 " +
-            (isActive ? "ddrMenuMobl__hamper--isActive" : null)
-          }
-        >
-          <div className="ddrMenuMobl__headerBar d-flex align-items-center justify-content-center">
-            <nav className="ddrMenuMobl__hamburgerCont d-flex align-items-center justify-content-center">
-              <button
-                className={
-                  "hamburger hamburger--vortex-r " +
-                  (isActive ? "is-active" : null)
-                }
-                onClick={handleToggle}
-              >
-                <span className="hamburger-box">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
-            </nav>
-
-            <header>
-              <h1 className="m-0 p-0 d-flex align-items-center justify-content-center">
-                <div className="ddrMenuMobl__imgCont d-flex align-items-center justify-content-center">
-                  <GatsbyImage
-                    image={getImage(data.ddrLogoMobile)}
-                    alt="Design Dev Resource"
-                    objectFit="contain"
-                    className="ddrMenuMobl__img"
-                  />
-                </div>
-              </h1>
-            </header>
+      <header
+        className={
+          "ddrMenuMobl__hamper d-flex align-items-start justify-content-center m-0 p-0 " +
+          (isActive ? "ddrMenuMobl__hamper--isActive" : null)
+        }
+      >
+        <nav className="ddrMenuMobl__headerBar d-flex align-items-center justify-content-center">
+          <div className="ddrMenuMobl__hamburgerCont d-flex align-items-center justify-content-center">
+            <button
+              className={
+                "hamburger hamburger--vortex-r " +
+                (isActive ? "is-active" : null)
+              }
+              onClick={handleToggle}
+            >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
-        </div>
-      </div>
+          <h1 className="m-0 p-0 d-flex align-items-center justify-content-center">
+            <div className="ddrMenuMobl__imgCont d-flex align-items-center justify-content-center">
+              <GatsbyImage
+                image={getImage(data.ddrLogoMobile)}
+                alt="Design Dev Resource"
+                objectFit="contain"
+                className="ddrMenuMobl__img"
+              />
+            </div>
+          </h1>
+        </nav>
+      </header>
+
       {/* DESKTOP MENU */}
       <div className="designDevResourceDesktop">
         <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">

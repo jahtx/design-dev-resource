@@ -53,15 +53,14 @@ $mobileNavHeight: 7rem;
 }
 
 .ddrMenuMobl {
-  &__cradle {
-    // this determines whether it displays for mobile or desktop
+  &__hamper {
+    // this is the header
+    // hamper is d-flex align-items-start justify-content-center m-0 p-0
     display: block;
     @include MQ(S) {
       display: none;
     }
-  }
-  &__hamper {
-    // hamper is d-flex align-items-start justify-content-center m-0 p-0
+
     background-color: $prime-blue;
     height: $mobileNavHeight;
     position: fixed;
@@ -74,6 +73,7 @@ $mobileNavHeight: 7rem;
     }
   }
   &__headerBar {
+    // this is the nav element
     // headerBar is d-flex align-items-center justify-content-center
     height: $mobileNavHeight;
   }
