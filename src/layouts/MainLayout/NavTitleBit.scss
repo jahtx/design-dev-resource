@@ -101,10 +101,15 @@
 .slideMenu {
   width: 100%;
   top: 3.5rem;
-  height: 20rem;
+  height: 0;
   position: fixed;
   z-index: 3;
   background-color: $prime-blue;
+  transition: height 0.5s ease-in-out;
+}
+
+.slideMenu-isActive {
+  height: 20rem;
 }
 
 .designDevResourceDesktop {

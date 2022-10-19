@@ -51,7 +51,9 @@ const NavTitleBit = () => {
             </h1>
           </header>
         </div>
-        <div className="slideMenu">Here</div>
+        <div
+          className={"slideMenu " + (isActive ? "slideMenu-isActive" : null)}
+        ></div>
       </div>
       <div className="designDevResourceDesktop">
         <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
