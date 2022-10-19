@@ -9,13 +9,16 @@
 
 .navTitleBitMob {
   background-color: $prime-blue;
-  padding: 1vh 0;
+
+  height: 3.5rem;
   position: fixed;
   z-index: 3;
+  // -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+  // box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
 }
 
 .navSpacer {
-  height: 2rem;
+  height: 3.1rem;
   display: block;
   @include MQ(S) {
     display: none;
@@ -95,10 +98,19 @@
   }
 }
 
+.slideMenu {
+  width: 100%;
+  top: 3.5rem;
+  height: 20rem;
+  position: fixed;
+  z-index: 3;
+  background-color: $prime-blue;
+}
+
 .designDevResourceDesktop {
   display: none;
   &__imgCont {
-    padding: 0.9rem;
+    padding: 0.9rem 3rem;
   }
   @include MQ(S) {
     display: block;

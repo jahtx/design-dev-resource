@@ -24,7 +24,7 @@ const NavTitleBit = () => {
     <>
       <div className="designDevResourceNewMob">
         <div className="navTitleBitMob d-flex align-items-center justify-content-center m-0 p-1">
-          <div className="hamburgerCont d-flex align-items-center justify-content-center">
+          <nav className="hamburgerCont d-flex align-items-center justify-content-center">
             <button
               className={
                 "hamburger hamburger--vortex-r " +
@@ -36,7 +36,8 @@ const NavTitleBit = () => {
                 <span className="hamburger-inner"></span>
               </span>
             </button>
-          </div>
+          </nav>
+
           <header>
             <h1 className="m-0 p-0">
               <div className="designDevResourceNewMob__imgCont  d-flex align-items-center justify-content-center">
@@ -50,6 +51,7 @@ const NavTitleBit = () => {
             </h1>
           </header>
         </div>
+        <div className="slideMenu">Here</div>
       </div>
       <div className="designDevResourceDesktop">
         <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
