@@ -9,7 +9,7 @@
 
 .navTitleBitMob {
   background-color: $prime-blue;
-  height: 3.5rem;
+  height: 8.5rem;
   position: fixed;
   z-index: 3;
   transition: height 0.5s ease-in-out;
@@ -21,7 +21,7 @@
 }
 
 .navSpacer {
-  height: 3.1rem;
+  height: 8.5rem;
   display: block;
   @include MQ(S) {
     display: none;

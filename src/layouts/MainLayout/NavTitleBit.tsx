@@ -48,7 +48,7 @@ const NavTitleBit = () => {
               <h1 className="m-0 p-0">
                 <div className="designDevResourceNewMob__imgCont d-flex align-items-center justify-content-center">
                   <GatsbyImage
-                    image={getImage(data.designDevResourceLogoDesktop)}
+                    image={getImage(data.designDevResourceLogoMobile)}
                     alt="Design Dev Resource"
                     objectFit="contain"
                     className="designDevResourceDesktop__img"
@@ -86,8 +86,8 @@ export const ImageQuery = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        workDesignLogo: file(
-          relativePath: { eq: "designdevresource-logo-mobile.png" }
+        designDevResourceLogoMobile: file(
+          relativePath: { eq: "design-dev-mob.png" }
         ) {
           childImageSharp {
             gatsbyImageData(
