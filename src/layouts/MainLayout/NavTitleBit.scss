@@ -9,12 +9,15 @@
 
 .navTitleBitMob {
   background-color: $prime-blue;
-
   height: 3.5rem;
   position: fixed;
   z-index: 3;
-  // -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
-  // box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+  transition: height 0.5s ease-in-out;
+  -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+  box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
+  &--isActive {
+    height: 20rem;
+  }
 }
 
 .navSpacer {
@@ -26,6 +29,7 @@
 }
 
 .hamburgerCont {
+  height: 100%;
   padding: 0.3rem 0 0 0;
   button.hamburger {
     padding: 0 0.5rem;
@@ -96,20 +100,6 @@
     width: 100%;
     max-width: 1200px;
   }
-}
-
-.slideMenu {
-  width: 100%;
-  top: 3.5rem;
-  height: 0;
-  position: fixed;
-  z-index: 3;
-  background-color: $prime-blue;
-  transition: height 0.5s ease-in-out;
-}
-
-.slideMenu-isActive {
-  height: 20rem;
 }
 
 .designDevResourceDesktop {

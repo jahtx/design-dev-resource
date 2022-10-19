@@ -1,7 +1,6 @@
 import * as React from "react";
 import NavTitleBit from "./NavTitleBit";
 import Footer from "./Footer";
-import MainNav from "./MainNav";
 
 type MainLayoutProps = {
   children: React.ReactNode;
