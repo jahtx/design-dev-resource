@@ -27,7 +27,7 @@ const NavTitleBit = () => {
         {/* cradle determines whether the element shows in mobile or desktop sizes */}
         <header
           className={
-            "ddrMenuMobl__hamper d-flex align-items-start justify-content-center m-0 p-0 " +
+            "ddrMenuMobl__hamper d-flex flex-column align-items-start m-0 p-0 " +
             (isActive ? "ddrMenuMobl__hamper--isActive" : null)
           }
         >
@@ -56,6 +56,16 @@ const NavTitleBit = () => {
               </div>
             </h1>
           </nav>
+          <ul
+            className={
+              "ddrMenuMobl__list text-center m-0 p-0 " +
+              (isActive ? "ddrMenuMobl__list--isActive" : null)
+            }
+          >
+            <li>Vestibulum lacus lorem</li>
+            <li>Cras nibh lectus</li>
+            <li>Sed blandit sit amet</li>
+          </ul>
         </header>
       </div>
       {/* DESKTOP MENU */}
