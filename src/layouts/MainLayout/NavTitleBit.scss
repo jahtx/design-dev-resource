@@ -38,19 +38,6 @@ $mobileNavHeight: 7rem;
     }
   }
 }
-.designDevResourceMobile {
-  display: block;
-  @include MQ(S) {
-    display: none;
-  }
-  &__imgCont {
-    padding: 1rem 0;
-  }
-  &__img {
-    width: 100%;
-    max-width: 70vw;
-  }
-}
 
 .ddrMenuMobl {
   &__cradle {
@@ -113,7 +100,7 @@ $mobileNavHeight: 7rem;
   }
 }
 
-.designDevResourceDesktop {
+.ddrMenuDesk {
   display: none;
   &__imgCont {
     padding: 0.9rem 3rem;

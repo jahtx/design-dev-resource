@@ -59,16 +59,16 @@ const NavTitleBit = () => {
         </header>
       </div>
       {/* DESKTOP MENU */}
-      <div className="designDevResourceDesktop">
+      <div className="ddrMenuDesk">
         <div className="navTitleBit d-flex align-items-center justify-content-center m-0 p-0">
           <header>
             <h1 className="m-0 p-0">
-              <div className="designDevResourceDesktop__imgCont  d-flex align-items-center justify-content-center">
+              <div className="ddrMenuDesk__imgCont  d-flex align-items-center justify-content-center">
                 <GatsbyImage
                   image={getImage(data.ddrLogoDesktop)}
                   alt="Design Dev Resource"
                   objectFit="contain"
-                  className="designDevResourceDesktop__img"
+                  className="ddrMenuDesk__img"
                 />
               </div>
             </h1>
