@@ -4,7 +4,6 @@ export type DataProps = {
       title: string;
       description: string;
       keywords: string;
-      author: string;
       siteUrl: string;
       featuredImage: any;
     };
