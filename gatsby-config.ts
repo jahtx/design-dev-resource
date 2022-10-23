@@ -22,6 +22,12 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "src/images/design-favicon.png",
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-gtag`,
