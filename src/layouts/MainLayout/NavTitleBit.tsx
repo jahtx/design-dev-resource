@@ -77,7 +77,7 @@ const NavTitleBit = () => {
                       <a
                         href={url}
                         aira-label={ariaLabel}
-                        onClick={() => setActive(!isActive)}
+                        onClick={handleToggle}
                       >
                         {linkName}
                       </a>
