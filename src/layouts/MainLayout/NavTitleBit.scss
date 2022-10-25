@@ -18,14 +18,14 @@ $mobileNavHeightActive: 13rem;
     // this is the header
     // hamper is d-flex align-items-start justify-content-center m-0 p-0
     background-color: $prime-blue;
-    height: $mobileNavHeight;
     position: fixed;
     z-index: 3;
-    transition: height 0.3s ease-in-out;
+    height: 300px;
+    transition: height 1s ease-in-out;
     -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
     box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
     &--isActive {
-      height: $mobileNavHeightActive;
+      height: 9rem;
     }
   }
   &__headerBar {
@@ -50,20 +50,12 @@ $mobileNavHeightActive: 13rem;
   $timing: 1.4s;
   &__list {
     font-family: "Montserrat", "Lora", "Open Sans", "Trebuchet MS", Sans-serif;
-    top: $mobileNavHeight;
     width: 100%;
     list-style-type: none;
     color: white;
-    position: absolute;
-    visibility: hidden;
+    position: relative;
+
     text-transform: uppercase;
-    opacity: 0;
-    transition: visibility 0s linear $timing, opacity 500ms;
-    &--isActive {
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 0s linear 0s, opacity $timing;
-    }
 
     li {
       font-family: "Montserrat", "Lora", "Open Sans", "Trebuchet MS", Sans-serif;
