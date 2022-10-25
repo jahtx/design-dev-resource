@@ -3,8 +3,6 @@
 @import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 $mobileNavHeight: 7rem;
-// $mobileNavHeightActive: 100vh;
-$mobileNavHeightActive: 13rem;
 
 .ddrMenuMobl {
   &__cradle {
@@ -19,14 +17,12 @@ $mobileNavHeightActive: 13rem;
     // hamper is d-flex align-items-start justify-content-center m-0 p-0
     background-color: $prime-blue;
     position: fixed;
+    overflow: hidden;
     z-index: 3;
-    height: 300px;
-    transition: height 1s ease-in-out;
+    height: 125px;
+    transition: height 0.3s ease-in-out;
     -webkit-box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
     box-shadow: 1px 5px 17px -3px rgba(0, 0, 0, 0.74);
-    &--isActive {
-      height: 9rem;
-    }
   }
   &__headerBar {
     // this is the nav element

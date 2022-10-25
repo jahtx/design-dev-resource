@@ -9,6 +9,11 @@
       "linkName": "Contact",
       "url": "/#contact",
       "ariaLabel": "contact form to contact Covidnomics team"
+    },
+    {
+      "linkName": "Ipsum",
+      "url": "/#contact",
+      "ariaLabel": "contact form to contact Covidnomics team"
     }
   ]
 }

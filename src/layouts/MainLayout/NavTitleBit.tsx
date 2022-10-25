@@ -20,8 +20,8 @@ const NavTitleBit = () => {
   const handleToggle = () => {
     setActive(!isActive);
     var growDiv = document.getElementById("mainHamper");
-    if (growDiv.clientHeight === 300) {
-      growDiv.style.height = "300";
+    if (growDiv.clientHeight > 200) {
+      growDiv.style.height = "125px";
     } else {
       var wrapper = document.querySelector(".measuringWrapper");
       growDiv.style.height = wrapper.clientHeight + "px";
